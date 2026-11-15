@@ -1,6 +1,4 @@
 ## Aluno: João Guilherme Freitas Cappellari
-Data: domingo 15/11/2026
-
 
 
 
@@ -48,7 +46,24 @@ make windows WINDOWS_CPPFLAGS="-I/caminho/include" WINDOWS_LDFLAGS="-L/caminho/l
 Em qualquer plataforma, `make clean` remove os executáveis compilados.
 <br>    
 <br>
-Feito por:
-João Cappellari <br>
-e <br>
+<em>a sessão abaixo contem ironia</em>
+## Feito por:<br>
+João Cappellari
+ <br>
 Copilot
+<br>
+Claude
+<br>
+ChatGPT
+<br>
+Gemini
+<br>
+DeepSeek
+<br>
+Grok
+<br>
+Ollama
+<br>
+Mistral
+<br>
+Llama

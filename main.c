@@ -162,13 +162,13 @@ void reset_game(void) {
 }
 
 // células do grid
-void draw_cell(int x, int y, float r, float g, float b) {
+void draw_cell(int x, int y, float r, float g, float b, float margin) {
     glColor3f(r, g, b);
     glBegin(GL_QUADS);
-    glVertex2f(x + 0.05f, y + 0.05f);
-    glVertex2f(x + 0.95f, y + 0.05f);
-    glVertex2f(x + 0.95f, y + 0.95f);
-    glVertex2f(x + 0.05f, y + 0.95f);
+    glVertex2f(x + margin, y + margin);
+    glVertex2f(x + 1.0f - margin, y + margin);
+    glVertex2f(x + 1.0f - margin, y + 1.0f - margin);
+    glVertex2f(x + margin, y + 1.0f - margin);
     glEnd();
 }
 
@@ -191,13 +191,13 @@ void draw_text(float x, float y, const char *text, void *font) {
 void display(void) {
     glClear(GL_COLOR_BUFFER_BIT);
 
-    draw_cell(food.x, food.y, 0.9f, 0.2f, 0.2f);
+    draw_cell(food.x, food.y, 0.9f, 0.2f, 0.2f, 0.05f);
 
     for (int i = 0; i < snake_len; i++) {
         if (i == 0) {
-            draw_cell(snake[i].x, snake[i].y, 0.3f, 1.0f, 0.3f);
+            draw_cell(snake[i].x, snake[i].y, 0.3f, 1.0f, 0.3f, 0.0f);
         } else {
-            draw_cell(snake[i].x, snake[i].y, 0.1f, 0.7f, 0.2f);
+            draw_cell(snake[i].x, snake[i].y, 0.1f, 0.7f, 0.2f, 0.05f);
         }
     }
 
