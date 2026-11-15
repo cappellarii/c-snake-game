@@ -51,4 +51,4 @@ Em qualquer plataforma, `make clean` remove os executáveis compilados.
 Feito por:
 João Cappellari <br>
 e <br>
-Copilot <3
+Copilot
